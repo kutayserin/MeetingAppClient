@@ -1,0 +1,27 @@
+<!-- meeting-form.component.html -->
+
+<div class="form-container">
+  <form [formGroup]="meetingForm" (ngSubmit)="saveMeeting()">
+    <div class="form-field">
+      <label for="name">Meeting Name</label>
+      <input id="name" formControlName="name" type="text" />
+    </div>
+    <div class="form-field">
+      <label for="startDate">Start Date</label>
+      <input id="startDate" formControlName="startDate" type="date" />
+    </div>
+    <div class="form-field">
+      <label for="endDate">End Date</label>
+      <input id="endDate" formControlName="endDate" type="date" />
+    </div>
+    <div class="form-field">
+      <label for="description">Description</label>
+      <textarea id="description" formControlName="description"></textarea>
+    </div>
+    <div class="form-field">
+      <label for="document">Document</label>
+      <input id="document" type="file" (change)="onFileChange($event)" />
+    </div>
+    <button type="submit" class="form-submit">Save Meeting</button>
+  </form>
+</div>

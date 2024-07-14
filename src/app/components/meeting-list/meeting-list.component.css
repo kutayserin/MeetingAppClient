@@ -1,0 +1,90 @@
+
+.meeting-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+  }
+
+  .meeting-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+
+  .meeting-details {
+    margin-bottom: 8px;
+  }
+  
+
+  .edit-button,
+  .delete-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .edit-button:hover,
+  .delete-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .edit-form {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .edit-form input[type="text"],
+  .edit-form input[type="date"],
+  .edit-form textarea,
+  .edit-form input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .edit-form textarea {
+    height: 100px;
+  }
+  
+  .edit-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .edit-form button.cancel-button {
+    background-color: #dc3545;
+  }
+  
+  .edit-form button:hover {
+    background-color: #218838;
+  }
+  
+  .edit-form p {
+    margin-top: 8px;
+  }
+  
+  .create-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .create-button:hover {
+    background-color: #0056b3;
+  }
+  

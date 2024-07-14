@@ -1,0 +1,29 @@
+
+<button class="create-button" routerLink="/logout">Logout</button>
+
+
+<div *ngFor="let meeting of meetings" class="meeting-item">
+  <h3 class="meeting-name">{{ meeting.name }}</h3>
+  <div class="meeting-details">
+    <p>Start Date: {{ meeting.startDate | date }}</p>
+    <p>End Date: {{ meeting.endDate | date }}</p>
+    <p>Description: {{ meeting.description }}</p>
+    <p>Document: {{ meeting.documentName }}</p> 
+  </div>
+  <button class="edit-button" (click)="editMeeting(meeting)">Edit</button>
+  <button class="delete-button" (click)="deleteMeeting(meeting.id)">Delete</button>
+  <div *ngIf="editingMeetingId === meeting.id" class="edit-form">
+    <!-- Edit Form -->
+    <form [formGroup]="editForm">
+      <input type="text" formControlName="name" placeholder="Name">
+      <input type="date" formControlName="startDate" placeholder="Start Date">
+      <input type="date" formControlName="endDate" placeholder="End Date">
+      <textarea formControlName="description" placeholder="Description"></textarea>
+      <input id="document" type="file" (change)="onFileSelected($event)">
+      <button class="save-button" (click)="saveMeeting()">Save</button>
+      <button class="cancel-button" (click)="cancelEdit()">Cancel</button>
+    </form>
+  </div>
+</div>
+
+<button class="create-button" routerLink="/meetings/new">Create New Meeting</button>
