@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "MeetingAppClient:build:production"
+              "buildTarget": "MeetingAppClient:build:production"
             },
             "development": {
-              "browserTarget": "MeetingAppClient:build:development"
+              "buildTarget": "MeetingAppClient:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MeetingAppClient:build"
+            "buildTarget": "MeetingAppClient:build"
           }
         },
         "test": {
