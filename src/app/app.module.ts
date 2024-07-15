@@ -13,7 +13,7 @@ import { MeetingFormComponent } from './components/meeting-form/meeting-form.com
 import { AuthService } from './services/auth.service';
 import { MeetingService } from './services/meeting.service';
 import { AuthInterceptor } from './auth-interceptor';
-import { LogoutComponent } from './logout/logout.component';
+import { LogoutComponent } from './components/logout/logout.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');

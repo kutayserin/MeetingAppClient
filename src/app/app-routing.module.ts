@@ -5,7 +5,7 @@ import { LoginComponent } from './components/login/login.component';
 import { MeetingListComponent } from './components/meeting-list/meeting-list.component';
 import { MeetingFormComponent } from './components/meeting-form/meeting-form.component';
 import { AuthGuard } from './auth-guard';
-import { LogoutComponent } from './logout/logout.component';
+import { LogoutComponent } from './components/logout/logout.component';
 
 const routes: Routes = [
   { path: 'register', component: RegisterComponent },
