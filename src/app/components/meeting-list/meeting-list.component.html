@@ -16,8 +16,8 @@
     <!-- Edit Form -->
     <form [formGroup]="editForm">
       <input type="text" formControlName="name" placeholder="Name">
-      <input type="date" formControlName="startDate" placeholder="Start Date">
-      <input type="date" formControlName="endDate" placeholder="End Date">
+      <input type="datetime-local" formControlName="startDate" placeholder="Start Date">
+      <input type="datetime-local" formControlName="endDate" placeholder="End Date">
       <textarea formControlName="description" placeholder="Description"></textarea>
       <input id="document" type="file" (change)="onFileSelected($event)">
       <button class="save-button" (click)="saveMeeting()">Save</button>

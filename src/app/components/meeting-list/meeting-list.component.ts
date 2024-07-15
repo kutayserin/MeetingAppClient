@@ -46,8 +46,8 @@ export class MeetingListComponent implements OnInit {
 
     this.editForm.patchValue({
       name: meeting.name,
-      startDate: new Date(meeting.startDate).toISOString().substring(0, 10),
-      endDate: new Date(meeting.endDate).toISOString().substring(0, 10),
+      startDate: new Date(meeting.startDate).toISOString().substring(0, 16),
+      endDate: new Date(meeting.endDate).toISOString().substring(0, 16),
       description: meeting.description,
       document: null 
     });
